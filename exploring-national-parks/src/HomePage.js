@@ -1,25 +1,23 @@
-/**
- * Renders the home page of the application.
- * @component
- * @module HomePage
- * @returns {JSX.Element} The rendered home page component.
- */
-import React from 'react'
-import Welcome from './HomePage/Components/Welcome'
-import Buttons from './HomePage/Components/Buttons'
-import yosemite from './HomePage/Assets/yosemite.jpg';
-import './Style/homepage.css'
-import HighlightGallery from './HomePage/Components/HighlightGallery';
-const HomePage = () => {
-  return (
-    // <Navbar/>
-    <div className = "home-page main-component">
-        {/* <h1>Test Hello</h1> */}
-        <Welcome/>
-        <HighlightGallery/>
-        <Buttons/>
-    </div>
-  )
-}
+import React from 'react';
+import WeatherComponent from './WeatherComponent'; // Import the WeatherComponent
 
-export default HomePage
+const HomePage = () => {
+    return (
+        <div style={{ padding: '20px', textAlign: 'center' }}>
+            <h1>Welcome to the National Parks Explorer</h1>
+            <p>Discover and plan your next adventure at one of the beautiful national parks.</p>
+            
+            {/* Add the WeatherComponent here to show weather information */}
+            <WeatherComponent />
+
+            {/* Other homepage content */}
+            <div style={{ marginTop: '30px' }}>
+                <h2>Featured Parks</h2>
+                <p>Explore our list of top-rated parks and start planning your visit!</p>
+                {/* Placeholder for other homepage sections, images, or links */}
+            </div>
+        </div>
+    );
+};
+
+export default HomePage;
