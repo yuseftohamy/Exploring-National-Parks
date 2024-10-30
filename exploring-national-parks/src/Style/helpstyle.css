@@ -1,0 +1,15 @@
+/* src/Style/help.css */
+.help-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+.faq-section, .contact-section {
+    margin-bottom: 20px;
+}
+.faq-item {
+    margin-bottom: 10px;
+}
+h1, h2 {
+    color: #333;
+}
